@@ -22,9 +22,7 @@ if not game.Players.LocalPlayer:IsInGroup(13578487) then
 
 end)
 
-local groupid = "13578487"
-
-if Player:IsInGroup(groupid) then
+if Player:IsInGroup("13578487") then
 game.StarterGui:SetCore("SendNotification",  {
  Title = "Gartic";
  Text = "Gartic Succesfully loaded";
