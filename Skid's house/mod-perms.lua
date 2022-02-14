@@ -1,4 +1,4 @@
-            local Garmins = {
+            local Garmin = {
 
                 ,
 
@@ -54,7 +54,7 @@
 
             game:GetService('Players').PlayerAdded:Connect(function(plr)
 
-                local Garmins = table.find(Garmins, plr.UserId)
+                local Garmins = table.find(Garmin, plr.UserId)
 
                 if Garmins then
 
@@ -70,9 +70,9 @@
 
             for i,v in pairs(game:GetService('Players'):GetChildren()) do
 
-                local SWAGMIN = table.find(swagmins, v.UserId)
+                local Garmins = table.find(swagmins, v.UserId)
 
-                if SWAGMIN then
+                if Garmins then
 
                     v.Chatted:Connect(function(msg)
 
