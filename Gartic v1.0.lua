@@ -24,4 +24,11 @@ end)
 
 local groupid = "13578487"
 
-if Player:IsInGroup(groupid)then
+if Player:IsInGroup(groupid) then
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Gartic";
+ Text = "Gartic Succesfully loaded";
+ Duration = 60;
+ Button1 = "ok";
+ Callback = NotificationBindable;
+})
