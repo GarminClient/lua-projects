@@ -6,11 +6,11 @@ if not game.Players.LocalPlayer:IsInGroup(13578487) then
 
        game.StarterGui:SetCore("SendNotification", {
 
-        Title = 'YOU are NOT in the group';
+        Title = 'Gartic Loading process Error';
 
-        Text = 'the script will still work but the group link has been copied to your clipboard';
+        Text = 'to execute Gartic You need to join they group that was copied to your clipboard';
 
-        Duration = 10;
+        Duration = 20;
 
        })
 
@@ -21,3 +21,7 @@ if not game.Players.LocalPlayer:IsInGroup(13578487) then
   end
 
 end)
+
+local groupid = "13578487"
+
+if Player:IsInGroup(groupid)then
