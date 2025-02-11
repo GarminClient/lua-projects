@@ -1,10 +1,5 @@
+
 local plr = game.Players.LocalPlayer
-local Lib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
-
-Lib.prompt('spree', "Loaded welcome "..plr.Name.." enjoy exploiting",10)
-
-
-
 
 
 
@@ -176,7 +171,6 @@ getgenv().filltrans = 1 --Change fill transparency
 getgenv().outlinetrans = 0 --Change outline transparency
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zntly/highlight-esp/main/esp.lua"))()
-Lib.prompt('spree', "Credits to hountor haziste on v3rm",10)
     end
 end)
 
@@ -197,20 +191,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zntly/highlight-esp/m
 end)
 
 EXECButton.MouseButton1Click:Connect(function()
-	if CMDBox.Text == "fly" then
-        loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc", true))()
-        Lib.prompt('spree', "Press e To Fly", 5)
+	if CMDBox.Text == "spy" then
+loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))()
     end
 end)
 
 EXECButton.MouseButton1Click:Connect(function()
-	if CMDBox.Text == "cfact" then
-local args = {
-    [1] = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://uselessfacts.jsph.pl/random.json?language=en")).text,
-    [2] = "All"
-}
+	if CMDBox.Text == "fact" then
+local TextChatService = game:GetService("TextChatService")
+local textChannel = TextChatService.TextChannels.RBXGeneral
 
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+textChannel:SendAsync(game:GetService("HttpService"):JSONDecode(game:HttpGet("https://uselessfacts.jsph.pl/random.json?language=en")).text)
     end
 end)
 
